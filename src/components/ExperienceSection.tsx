@@ -5,86 +5,61 @@ import { Building2, Calendar, MapPin } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Senior AI Engineer",
-      company: "TechCorp AI Solutions",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
-      type: "Full-time",
-      description: "Leading the development of next-generation AI products and managing a team of machine learning engineers. Responsible for architecting scalable ML systems and driving innovation in computer vision and NLP domains.",
-      achievements: [
-        "Built a computer vision system that increased accuracy by 35%",
-        "Led a team of 6 engineers in developing enterprise AI solutions",
-        "Reduced model inference time by 60% through optimization techniques",
-        "Published 3 research papers on advanced ML architectures"
-      ],
-      technologies: ["Python", "TensorFlow", "PyTorch", "Kubernetes", "AWS", "MLflow"]
-    },
-    {
-      title: "Machine Learning Engineer",
-      company: "DataMind Analytics",
-      location: "New York, NY",
-      period: "2020 - 2022",
-      type: "Full-time",
-      description: "Developed and deployed machine learning models for predictive analytics and recommendation systems. Collaborated with cross-functional teams to integrate AI solutions into existing business processes.",
-      achievements: [
-        "Implemented recommendation engine serving 10M+ daily users",
-        "Improved customer retention by 25% through predictive modeling",
-        "Automated data pipeline processing 1TB+ daily data",
-        "Mentored 4 junior developers in ML best practices"
-      ],
-      technologies: ["Python", "Scikit-learn", "Apache Spark", "Docker", "GCP", "PostgreSQL"]
-    },
-    {
-      title: "AI Research Intern",
-      company: "Innovation Labs",
-      location: "Boston, MA",
-      period: "2019 - 2020",
-      type: "Internship",
-      description: "Conducted research on deep learning applications in natural language processing. Contributed to open-source projects and presented findings at international conferences.",
-      achievements: [
-        "Developed novel attention mechanism for text classification",
-        "Achieved state-of-the-art results on 3 benchmark datasets",
-        "Presented research at NeurIPS 2020",
-        "Open-sourced code adopted by 500+ researchers"
-      ],
-      technologies: ["Python", "PyTorch", "Transformers", "CUDA", "Linux", "Git"]
-    },
-    {
-      title: "Software Developer",
-      company: "StartupTech",
-      location: "Remote",
-      period: "2018 - 2019",
-      type: "Freelance",
-      description: "Built web applications and integrated machine learning models for various startups. Gained experience in full-stack development and deployment of AI-powered applications.",
-      achievements: [
-        "Delivered 8 successful projects for different clients",
-        "Integrated ML models into production web applications",
-        "Reduced development time by 40% through code reusability",
-        "Maintained 99.9% uptime for critical applications"
-      ],
-      technologies: ["JavaScript", "React", "Node.js", "Python", "MongoDB", "AWS"]
-    }
+    title: "AI/ML Intern",
+    company: "Resolve, NSTP Islamabad",
+    location: "Islamabad, PK",
+    period: "July 2025 - August 2025",
+    type: "Internship",
+    description: "Built a SQL-based Question Answering System using LLMs (LLaMA 3, Mistral) to retrieve insights from structured databases. Designed two pipelines: a simple chain-based Q&A and a multi-step SQL Agent leveraging LangChain.",
+    achievements: [
+      "Developed SQL-based Question Answering System with LLMs (LLaMA 3, Mistral)",
+      "Designed and implemented simple chain-based Q&A and SQL Agent pipelines",
+      "Integrated LangChain with MySQL for secure multi-query reasoning workflows"
+    ],
+    technologies: ["Python", "LangChain", "LLaMA", "Mistral", "MySQL", "Flask"]
+  },
+  {
+    title: "Automation Engineer Intern",
+    company: "Algorithm",
+    location: "Peshawar, PK",
+    period: "June 2025 - August 2025",
+    type: "Internship",
+    description: "Automated document processing workflows using n8n and OCR with LLMs for structured data extraction and CRM integration.",
+    achievements: [
+      "Built automated document pipelines using n8n and OCR.space API",
+      "Integrated Google Gemini for text parsing and information extraction",
+      "Connected workflows with Monday.com CRM for auto record creation",
+      "Implemented schema validation and structured output parsing for reliability"
+    ],
+    technologies: ["Python", "n8n", "OCR.space API", "Google Gemini", "Monday.com"]
+  },
+  {
+    title: "AI/ML Intern",
+    company: "Bave Technologies",
+    location: "Peshawar, PK",
+    period: "Sep 2024 - Oct 2024",
+    type: "Internship",
+    description: "Developed robust web scraping pipelines and automated data workflows for consulting projects.",
+    achievements: [
+      "Built web scraping pipelines using Selenium, Requests, and BeautifulSoup",
+      "Automated data collection workflows for efficiency",
+      "Cleaned and stored structured data into CSV formats"
+    ],
+    technologies: ["Python", "Selenium", "BeautifulSoup", "Requests", "CSV"]
+  }
+
   ];
 
   const education = [
-    {
-      degree: "Master of Science in Artificial Intelligence",
-      school: "Stanford University",
-      location: "Stanford, CA",
-      period: "2017 - 2019",
-      gpa: "3.9/4.0",
-      thesis: "Deep Reinforcement Learning for Autonomous Systems",
-      coursework: ["Machine Learning", "Deep Learning", "Computer Vision", "NLP", "Robotics"]
-    },
-    {
-      degree: "Bachelor of Science in Computer Science",
-      school: "MIT",
-      location: "Cambridge, MA",
-      period: "2013 - 2017",
-      gpa: "3.8/4.0",
-      thesis: "Optimization Algorithms for Large-Scale Data Processing",
-      coursework: ["Algorithms", "Data Structures", "Statistics", "Linear Algebra", "Software Engineering"]
-    }
+   {
+  degree: "Bachelor of Science in Data Science",
+  school: "Institute of Management Sciences (IMSciences)",
+  location: "Peshawar, Pakistan",
+  period: "Sep 2021 – June 2025",
+  gpa: "3.10/4.0",
+  thesis: "Voice-to-Voice Bot for Shopping Mall Information Retrieval (Final Year Project)",
+  coursework: ["Machine Learning", "Deep Learning", "Natural Language Processing", "Database Systems", "Data Visualization"]
+}
   ];
 
   return (

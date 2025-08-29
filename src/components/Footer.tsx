@@ -28,7 +28,7 @@ const Footer = () => {
     {
       name: "GitHub",
       icon: Github,
-      href: "https://github.com/yourusername"
+      href: "https://github.com/imadkhattak"
     },
     {
       name: "LinkedIn",
@@ -38,7 +38,7 @@ const Footer = () => {
     {
       name: "Email",
       icon: Mail,
-      href: "mailto:hello@aiexpert.dev"
+      href: "mailto:imad.works100@gmail.com"
     }
   ];
 
@@ -51,7 +51,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="mb-6">
               <h3 className="text-2xl font-bold gradient-text mb-2">
-                &lt;AI Engineer /&gt;
+                Imad AI Engineer
               </h3>
               <p className="text-foreground-muted leading-relaxed">
                 Building the future with intelligent systems. Passionate AI Engineer dedicated to 
@@ -123,7 +123,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-border-light flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-foreground-muted text-sm">
-            © {currentYear} AI Expert Portfolio. All rights reserved.
+            © {currentYear} Imad Portfolio. All rights reserved.
           </div>
           
           <div className="flex items-center gap-1 text-foreground-muted text-sm">

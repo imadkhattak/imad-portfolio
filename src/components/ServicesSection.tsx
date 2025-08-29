@@ -25,7 +25,7 @@ const ServicesSection = () => {
         "Predictive analytics",
         "Deep learning architectures"
       ],
-      pricing: "Starting at $5,000",
+      pricing: "Contact",
       deliveryTime: "4-8 weeks",
       popular: true
     },
@@ -40,55 +40,42 @@ const ServicesSection = () => {
         "Cloud deployment",
         "Performance optimization"
       ],
-      pricing: "Starting at $3,000",
+      pricing: "Contact",
       deliveryTime: "3-6 weeks",
       popular: false
     },
     {
-      icon: Database,
-      title: "Data Engineering & MLOps",
-      description: "Robust data pipelines and MLOps infrastructure to ensure your AI systems are production-ready and scalable.",
-      features: [
-        "Data pipeline development",
-        "Model deployment automation",
-        "Monitoring & logging",
-        "CI/CD for ML models",
-        "Infrastructure as Code"
-      ],
-      pricing: "Starting at $4,000",
-      deliveryTime: "2-4 weeks",
-      popular: false
-    },
+  icon: Zap,
+  title: "Chatbot Development",
+  description: "Design and build intelligent chatbots tailored to your business needs. From customer support to sales automation, deliver seamless conversational experiences powered by AI.",
+  features: [
+    "Custom chatbot design and development",
+    "Voice & text-based interactions",
+    "Database and API integration",
+    "Multilingual support",
+    "Deployment on web, mobile, and messaging apps"
+  ],
+  pricing: "Contact",
+  deliveryTime: "2-3 weeks",
+  popular: true
+},
+
     {
       icon: Zap,
-      title: "AI Optimization & Performance",
-      description: "Optimize existing AI systems for better performance, reduced costs, and improved accuracy. Get more from your current investments.",
+      title: "Automation Workflows",
+      description: "Automate business processes and workflows using N8N. Integrate multiple apps, reduce manual effort, and streamline operations with intelligent automation pipelines.",
       features: [
-        "Model optimization",
-        "Performance tuning",
-        "Cost reduction strategies",
-        "Accuracy improvements",
-        "Scalability enhancements"
+        "End-to-end workflow automation",
+        "Integration with 200+ apps and APIs",
+        "Data extraction and processing",
+        "CRM & database automation",
+        "Custom business logic with AI"
       ],
-      pricing: "Starting at $2,500",
-      deliveryTime: "2-3 weeks",
-      popular: false
-    },
-    {
-      icon: Target,
-      title: "AI Strategy Consulting",
-      description: "Strategic guidance on AI adoption, technology selection, and implementation roadmaps. Make informed decisions about your AI journey.",
-      features: [
-        "AI readiness assessment",
-        "Technology recommendations",
-        "Implementation roadmap",
-        "ROI analysis",
-        "Risk assessment"
-      ],
-      pricing: "Starting at $1,500",
+      pricing: "Contact",
       deliveryTime: "1-2 weeks",
-      popular: false
+      popular: true
     },
+
     {
       icon: Users,
       title: "Training & Workshops",
@@ -97,10 +84,9 @@ const ServicesSection = () => {
         "Custom training programs",
         "Hands-on workshops",
         "Team skill assessment",
-        "Ongoing mentorship",
-        "Certificate programs"
+        "Ongoing mentorship"
       ],
-      pricing: "Starting at $2,000",
+      pricing: "Contact",
       deliveryTime: "1-4 weeks",
       popular: false
     }

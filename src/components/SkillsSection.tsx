@@ -55,16 +55,14 @@ const SkillsSection = () => {
   ];
 
   const certifications = [
-    "AWS Certified Machine Learning - Specialty",
-    "Google Professional ML Engineer",
-    "TensorFlow Developer Certificate",
-    "Azure AI Engineer Associate",
-    "Deep Learning Specialization (Coursera)"
+    "AI Engineering IBM- Specialty",
+    "Applied Data Science - World Quant University",
+    "Machine Learning (Coursera)"
   ];
 
   const tools = [
     "VS Code", "PyCharm", "Jupyter Lab", "Google Colab", "Kaggle",
-    "GitHub", "GitLab", "Slack", "Notion", "Figma"
+    "GitHub", "GitLab", "Slack"
   ];
 
   return (

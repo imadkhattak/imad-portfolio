@@ -49,7 +49,7 @@ const AboutSection = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold text-foreground">My Journey</h3>
               <p className="text-foreground-muted leading-relaxed">
-                With over 5 years of experience in artificial intelligence and machine learning, 
+                With over 1 year of experience in artificial intelligence and machine learning, 
                 I've had the privilege of working on cutting-edge projects that span from computer vision 
                 systems to natural language processing applications.
               </p>
@@ -107,9 +107,9 @@ const AboutSection = () => {
         {/* Stats */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { number: "50+", label: "Projects Completed" },
-            { number: "5+", label: "Years Experience" },
-            { number: "20+", label: "Technologies Mastered" },
+            { number: "5+", label: "Projects Completed" },
+            { number: "1+", label: "Years Experience" },
+            { number: "15+", label: "Technologies Mastered" },
             { number: "100%", label: "Client Satisfaction" }
           ].map((stat, index) => (
             <div key={index} className="text-center">

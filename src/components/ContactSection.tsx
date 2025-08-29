@@ -47,7 +47,7 @@ const ContactSection = () => {
       setIsSubmitting(false);
       toast({
         title: "Message Sent!",
-        description: "Thank you for your message. I'll get back to you within 24 hours.",
+        description: "Thank you for your message. I'll get back to you very shortly.",
       });
       setFormData({
         name: "",
@@ -64,19 +64,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@aiexpert.dev",
-      link: "mailto:hello@aiexpert.dev"
+      value: "imad.works100@gmail.com",
+      link: "mailto:imad.works100@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+92 (345) 919-8769",
+      link: "tel:+923459198769"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Peshawar, KPK, Pakistan",
       link: "#"
     }
   ];
@@ -85,18 +85,19 @@ const ContactSection = () => {
     {
       icon: Github,
       label: "GitHub",
-      url: "https://github.com/yourusername"
+      url: "https://github.com/imadkhattak"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      url: "https://linkedin.com/in/yourusername"
+      url: "www.linkedin.com/in/imad-ud-din-khattak"
     },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      url: "https://twitter.com/yourusername"
-    }
+  {
+  icon: Twitter,   // make sure `Instagram` icon is imported at the top
+  label: "Instagram",
+  url: "https://www.instagram.com/imad_.khattak/"
+}
+
   ];
 
   const budgetOptions = [
@@ -338,7 +339,7 @@ const ContactSection = () => {
                 and explore how AI can benefit your business.
               </p>
               <Badge className="bg-primary/20 text-primary px-4 py-2">
-                Usually responds within 24 hours
+                Usually responds within minutes
               </Badge>
             </CardContent>
           </Card>

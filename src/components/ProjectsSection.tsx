@@ -6,71 +6,39 @@ import { ExternalLink, Github } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "AI-Powered Content Generator",
-      description: "A sophisticated content generation platform using GPT models and custom fine-tuning. Features real-time content optimization, multi-language support, and SEO analysis.",
-      image: "🤖",
-      technologies: ["Python", "Transformers", "FastAPI", "React", "PostgreSQL"],
-      category: "Natural Language Processing",
-      status: "Production",
+      title: "Calling Bot for Shopping Malls Information Retrieval",
+      description: "A voice-based AI chatbot that allows users to query shopping mall information through natural speech. Built with Faster-Whisper for speech-to-text, MySQL for database storage, and LLMs for natural language responses. Features real-time query handling, silence detection, and continuous conversational loop.",
+      image: "📞",
+      technologies: ["Python", "MySQL", "Faster-Whisper", "LangChain", "Flask"],
+      category: "AI & Voice Assistant",
+      status: "Completed",
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/imadkhattak", // replace with your repo link if available
+      featured: true
+    },
+
+    {
+      title: "SQL Agent for Natural Language Queries",
+      description: "An intelligent SQL agent that converts natural language questions into MySQL queries using LLMs. Integrated with n8n workflow automation, Pinecone for schema storage, and Ollama for query generation. Enables seamless data exploration without writing SQL manually.",
+      image: "🗄️",
+      technologies: ["Python", "n8n", "MySQL", "Ollama", "Pinecone"],
+      category: "AI Agents",
+      status: "Completed",
+      demoUrl: "#",
+      githubUrl: "https://github.com/imadkhattak", // replace with actual repo if available
       featured: true
     },
     {
-      title: "Computer Vision Detection System",
-      description: "Real-time object detection and tracking system for industrial automation. Implemented using YOLO architecture with custom training on specialized datasets.",
-      image: "👁️",
-      technologies: ["Python", "PyTorch", "OpenCV", "Docker", "AWS"],
-      category: "Computer Vision",
-      status: "Production",
-      demoUrl: "#",
-      githubUrl: "#",
-      featured: true
-    },
-    {
-      title: "Predictive Analytics Dashboard",
-      description: "Machine learning platform for business forecasting with interactive dashboards. Includes time series analysis, anomaly detection, and automated reporting.",
-      image: "📈",
-      technologies: ["Python", "Scikit-learn", "Plotly", "Streamlit", "MongoDB"],
-      category: "Data Science",
-      status: "Production",
-      demoUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      title: "Chatbot Intelligence Platform",
-      description: "Multi-modal conversational AI with voice synthesis, emotion recognition, and context awareness. Deployed across multiple communication channels.",
-      image: "💬",
-      technologies: ["Python", "TensorFlow", "Rasa", "WebRTC", "Redis"],
-      category: "Conversational AI",
-      status: "Development",
-      demoUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      title: "MLOps Pipeline Automation",
-      description: "End-to-end machine learning operations platform with automated model training, validation, deployment, and monitoring capabilities.",
-      image: "⚙️",
-      technologies: ["Kubernetes", "MLflow", "Airflow", "Prometheus", "Grafana"],
-      category: "MLOps",
-      status: "Production",
-      demoUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      title: "Recommendation Engine",
-      description: "Scalable recommendation system using collaborative filtering and deep learning. Handles millions of users with sub-second response times.",
-      image: "🎯",
-      technologies: ["Python", "TensorFlow", "Apache Spark", "Cassandra", "Kafka"],
-      category: "Recommendation Systems",
-      status: "Production",
-      demoUrl: "#",
-      githubUrl: "#",
-      featured: false
-    }
+  title: "Car Price Prediction System",
+  description: "Built a machine learning pipeline to predict car prices using data scraped from PakWheels. Performed data collection with Selenium, data cleaning, feature engineering, and applied regression models for accurate predictions.",
+  image: "🚗",
+  technologies: ["Python", "Selenium", "Pandas", "Scikit-learn", "Matplotlib"],
+  category: "Machine Learning",
+  status: "Completed",
+  demoUrl: "#",
+  githubUrl: "https://github.com/imadkhattak", // replace with actual repo if available
+  featured: false
+}
   ];
 
   const categories = ["All", "Natural Language Processing", "Computer Vision", "Data Science", "Conversational AI", "MLOps", "Recommendation Systems"];
