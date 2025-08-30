@@ -20,5 +20,5 @@ export default defineConfig(({ mode }) => ({
   },
 
   // 👇 put it here
-  base: "/",
+  base: "/imad-portfolio/",
 }))
