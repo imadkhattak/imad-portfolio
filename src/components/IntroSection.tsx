@@ -106,7 +106,7 @@ const IntroSection = () => {
       <div className="flex-1 flex justify-center relative z-10">
         <div className="w-60 h-60 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary shadow-xl">
           <img 
-            src="../../dist/assets/imad.jpg" 
+            src="../../imad.jpg" 
             alt="Imad ud din khattak" 
             className="w-full h-full object-cover"
           />
