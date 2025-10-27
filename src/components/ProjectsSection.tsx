@@ -5,6 +5,17 @@ import { ExternalLink, Github } from "lucide-react";
 
 const ProjectsSection = () => {
   const projects = [
+     {
+       "title": "AI Job Application Assistant",
+       "description": "An AI-powered job application assistant that scrapes job postings from multiple platforms (LinkedIn, Indeed, Glassdoor), parses user-uploaded CVs, and utilizes a Large Language Model (LLM) to match candidate profiles with suitable job openings. The web interface is built with Flask.",
+       "image": "💼",
+       "technologies": ["Python", "Flask", "LangChain", "Ollama", "Requests", "PyPDF", "HTML", "CSS", "JavaScript"],
+       "category": "AI & Web Development",
+       "status": "Completed",
+       "demoUrl": "#",
+       "githubUrl": "https://github.com/imadkhattak",
+      "featured": true
+     },
     {
       title: "Calling Bot for Shopping Malls Information Retrieval",
       description: "A voice-based AI chatbot that allows users to query shopping mall information through natural speech. Built with Faster-Whisper for speech-to-text, MySQL for database storage, and LLMs for natural language responses. Features real-time query handling, silence detection, and continuous conversational loop.",
