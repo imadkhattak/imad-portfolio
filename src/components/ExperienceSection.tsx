@@ -5,6 +5,20 @@ import { Building2, Calendar, MapPin } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
+  title: "AI/ML Intern",
+  company: "K2X Tech",
+  location: "Peshawar, PK",
+  period: "September 2025 - Present",
+  type: "Internship",
+  description: "Working on AI-driven systems leveraging Large Language Models (LLMs), Ollama, and relational databases. Developing Python-based automation scripts and intelligent data workflows for production-level applications.",
+  achievements: [
+    "Implemented and optimized LLM-based applications using Ollama for local inference",
+    "Developed Python scripts integrating LLMs with databases for dynamic data interaction",
+    "Collaborated with the AI team to enhance multi-agent and RAG-based system architectures"
+  ],
+  technologies: ["Python", "Ollama", "LangChain", "MySQL", "LLMs", "Flask"]
+},
+    {
     title: "AI/ML Intern",
     company: "Resolve, NSTP Islamabad",
     location: "Islamabad, PK",
