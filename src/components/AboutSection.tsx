@@ -40,7 +40,7 @@ const AboutSection = () => {
             <div className="aspect-square max-w-md mx-auto rounded-3xl overflow-hidden bg-background-secondary border border-border-light relative z-10">
                {/* Replace with actual image */}
                <div className="absolute inset-0 flex items-center justify-center text-foreground-muted bg-muted/30">
-                  <span className="text-6xl">👤</span>
+                  <span className="text-6xl"><img src="Images/20250215_135953 (2).jpg" alt="" /></span>
                </div>
             </div>
             {/* Decorative background element */}
@@ -55,7 +55,7 @@ const AboutSection = () => {
                 Hi there, I'm <span className="text-primary">Imad Khattak</span>
               </h2>
               <p className="text-lg text-foreground-muted font-medium mb-6">
-                AI ENGINEER BASED IN PAKISTAN
+                AI ENGINEER
               </p>
             </div>
 
