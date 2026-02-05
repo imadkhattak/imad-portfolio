@@ -324,26 +324,7 @@ const ContactSection = () => {
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-16 text-center">
-          <Card className="bg-gradient-card border-border-light max-w-2xl mx-auto">
-            <CardContent className="p-8">
-              <div className="flex items-center justify-center mb-4">
-                <CheckCircle className="h-8 w-8 text-accent-green mr-3" />
-                <h3 className="text-xl font-semibold text-foreground">
-                  Free Initial Consultation
-                </h3>
-              </div>
-              <p className="text-foreground-muted mb-6">
-                I offer a complimentary 30-minute consultation to discuss your project requirements 
-                and explore how AI can benefit your business.
-              </p>
-              <Badge className="bg-primary/20 text-primary px-4 py-2">
-                Usually responds within minutes
-              </Badge>
-            </CardContent>
-          </Card>
-        </div>
+
       </div>
     </section>
   );

@@ -4,12 +4,6 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
-    Services: [
-      { name: "AI Development", href: "#services" },
-      { name: "Machine Learning", href: "#services" },
-      { name: "Data Engineering", href: "#services" },
-      { name: "Consulting", href: "#services" }
-    ],
     Company: [
       { name: "About", href: "#about" },
       { name: "Projects", href: "#projects" },

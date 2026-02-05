@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,63 +7,72 @@
 /* AI Engineer Portfolio Design System - Bluish Black Theme */
 @layer base {
   :root {
-    /* Core Portfolio Colors - Bluish Black Theme */
-    --background: 220 30% 6%;
-    --background-secondary: 220 25% 8%;
-    --background-tertiary: 220 20% 12%;
-    --foreground: 220 15% 95%;
-    --foreground-muted: 220 10% 70%;
-    --foreground-subtle: 220 8% 50%;
+    /* Core Portfolio Colors - Black & White Theme */
+    --background: 0 0% 100%;
+    --background-secondary: 0 0% 98%;
+    --background-tertiary: 0 0% 96%;
+    --foreground: 0 0% 0%;
+    --foreground-muted: 0 0% 40%;
+    --foreground-subtle: 0 0% 60%;
 
-    /* AI/Tech Brand Colors */
-    --primary: 200 100% 60%;
-    --primary-dark: 200 90% 45%;
-    --primary-light: 200 100% 75%;
-    --primary-foreground: 220 30% 6%;
+    /* Brand Colors - Monochrome */
+    --primary: 0 0% 0%;
+    --primary-dark: 0 0% 20%;
+    --primary-light: 0 0% 80%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Accent Colors */
-    --accent-cyan: 180 100% 60%;
-    --accent-purple: 260 100% 70%;
-    --accent-green: 140 70% 60%;
-    --accent-orange: 25 95% 65%;
+    /* Accent Colors - Desaturated/Monochrome or Subtle */
+    --accent-cyan: 0 0% 20%;
+    --accent-purple: 0 0% 30%;
+    --accent-green: 0 0% 40%;
+    --accent-orange: 0 0% 50%;
 
     /* Interactive Elements */
-    --hover: 220 20% 15%;
-    --active: 220 25% 18%;
-    --border: 220 15% 20%;
-    --border-light: 220 10% 25%;
+    --hover: 0 0% 96%;
+    --active: 0 0% 92%;
+    --border: 0 0% 90%;
+    --border-light: 0 0% 95%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent-cyan)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--background-secondary)) 50%, hsl(var(--primary) / 0.1) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(var(--background-secondary)) 0%, hsl(var(--background-tertiary)) 100%);
-    --gradient-text: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent-cyan)));
+    /* Gradients - Subtle or Removed */
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 20%), hsl(0 0% 0%));
+    --gradient-hero: linear-gradient(
+      180deg,
+      hsl(0 0% 100%) 0%,
+      hsl(0 0% 98%) 100%
+    );
+    --gradient-card: linear-gradient(
+      145deg,
+      hsl(0 0% 100%) 0%,
+      hsl(0 0% 98%) 100%
+    );
+    --gradient-text: linear-gradient(135deg, hsl(0 0% 0%), hsl(0 0% 30%));
 
     /* Shadows & Effects */
-    --shadow-glow: 0 0 30px hsl(var(--primary) / 0.3);
-    --shadow-card: 0 10px 30px -5px hsl(var(--background) / 0.8);
-    --shadow-hover: 0 20px 40px -10px hsl(var(--primary) / 0.2);
+    --shadow-glow: 0 0 20px hsl(0 0% 0% / 0.1);
+    --shadow-card:
+      0 4px 6px -1px hsl(0 0% 0% / 0.05), 0 2px 4px -1px hsl(0 0% 0% / 0.03);
+    --shadow-hover: 0 10px 15px -3px hsl(0 0% 0% / 0.08);
 
     /* Animation Properties */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     /* Component Variables */
-    --card: var(--background-secondary);
-    --card-foreground: var(--foreground);
-    --popover: var(--background-tertiary);
-    --popover-foreground: var(--foreground);
-    --secondary: var(--background-tertiary);
-    --secondary-foreground: var(--foreground);
-    --muted: var(--background-tertiary);
-    --muted-foreground: var(--foreground-muted);
-    --accent: var(--primary);
-    --accent-foreground: var(--primary-foreground);
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 0%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: var(--foreground);
-    --input: var(--border);
-    --ring: var(--primary);
-    --radius: 0.75rem;
+    --destructive-foreground: 0 0% 98%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 0%;
+    --radius: 0rem;
   }
 }
 
@@ -83,12 +92,18 @@
   }
 
   /* Typography Enhancements */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-inter font-semibold tracking-tight;
   }
 
   /* Code Elements */
-  code, pre {
+  code,
+  pre {
     @apply font-mono;
   }
 }
@@ -135,8 +150,13 @@
   }
 
   @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
   }
 
   /* Typing Animation */
@@ -144,17 +164,28 @@
     overflow: hidden;
     border-right: 2px solid hsl(var(--primary));
     white-space: nowrap;
-    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret 0.75s step-end infinite;
   }
 
   @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
   }
 
   @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: hsl(var(--primary)); }
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: hsl(var(--primary));
+    }
   }
 
   /* Parallax Elements */
