@@ -23,8 +23,6 @@ const ContactSection = () => {
     name: "",
     email: "",
     subject: "",
-    budget: "",
-    timeline: "",
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -53,8 +51,6 @@ const ContactSection = () => {
         name: "",
         email: "",
         subject: "",
-        budget: "",
-        timeline: "",
         message: ""
       });
     }, 2000);
@@ -100,31 +96,17 @@ const ContactSection = () => {
 
   ];
 
-  const budgetOptions = [
-    "< $5,000",
-    "$5,000 - $10,000",
-    "$10,000 - $25,000",
-    "$25,000 - $50,000",
-    "$50,000+"
-  ];
 
-  const timelineOptions = [
-    "ASAP",
-    "1-2 weeks",
-    "1 month",
-    "2-3 months",
-    "3+ months"
-  ];
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-12 border-b border-primary/20">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-bold gradient-text mb-4">
             Let's Work Together
           </h2>
-          <p className="text-xl text-foreground-muted max-w-3xl mx-auto">
-            Ready to bring your AI vision to life? I'd love to hear about your project and discuss how we can collaborate.
+          <p className="text-lg text-foreground-muted max-w-2xl mx-auto">
+            Ready to bring your AI vision to life?
           </p>
         </div>
 
@@ -251,39 +233,7 @@ const ContactSection = () => {
                     />
                   </div>
 
-                  {/* Budget and Timeline */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <Label htmlFor="budget" className="text-foreground">Budget Range</Label>
-                      <select
-                        id="budget"
-                        name="budget"
-                        value={formData.budget}
-                        onChange={handleInputChange}
-                        className="w-full p-3 bg-background-tertiary border border-border-light rounded-md text-foreground"
-                      >
-                        <option value="">Select budget range</option>
-                        {budgetOptions.map((option, index) => (
-                          <option key={index} value={option}>{option}</option>
-                        ))}
-                      </select>
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="timeline" className="text-foreground">Timeline</Label>
-                      <select
-                        id="timeline"
-                        name="timeline"
-                        value={formData.timeline}
-                        onChange={handleInputChange}
-                        className="w-full p-3 bg-background-tertiary border border-border-light rounded-md text-foreground"
-                      >
-                        <option value="">Select timeline</option>
-                        {timelineOptions.map((option, index) => (
-                          <option key={index} value={option}>{option}</option>
-                        ))}
-                      </select>
-                    </div>
-                  </div>
+
 
                   {/* Message */}
                   <div className="space-y-2">

@@ -34,73 +34,58 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-background-secondary">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6">
-            About Me
-          </h2>
-          <p className="text-xl text-foreground-muted max-w-3xl mx-auto">
-            Passionate AI Engineer with a mission to create intelligent systems that solve real-world problems
-          </p>
-        </div>
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Story */}
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-foreground">My Journey</h3>
-              <p className="text-foreground-muted leading-relaxed">
-                With over 1 year of experience in artificial intelligence and machine learning, 
-                I've had the privilege of working on cutting-edge projects that span from computer vision 
-                systems to natural language processing applications.
-              </p>
-              <p className="text-foreground-muted leading-relaxed">
-                My passion lies in transforming complex research concepts into practical, scalable solutions. 
-                I believe that the future of technology is not just about building smarter systems, 
-                but about creating AI that truly understands and enhances human capabilities.
-              </p>
-              <p className="text-foreground-muted leading-relaxed">
-                When I'm not coding or training models, you'll find me contributing to open-source projects, 
-                writing technical articles, or exploring the latest advancements in AI research.
-              </p>
+          {/* Left Column - Image */}
+          <div className="order-2 lg:order-1 relative">
+            <div className="aspect-square max-w-md mx-auto rounded-3xl overflow-hidden bg-background-secondary border border-border-light relative z-10">
+               {/* Replace with actual image */}
+               <div className="absolute inset-0 flex items-center justify-center text-foreground-muted bg-muted/30">
+                  <span className="text-6xl">👤</span>
+               </div>
             </div>
-
-            {/* Interests */}
-            <div>
-              <h4 className="text-lg font-semibold text-foreground mb-4">Areas of Interest</h4>
-              <div className="flex flex-wrap gap-2">
-                {interests.map((interest, index) => (
-                  <Badge 
-                    key={index} 
-                    variant="secondary" 
-                    className="bg-background-tertiary text-foreground-muted hover:bg-primary/20 hover:text-primary transition-colors duration-300"
-                  >
-                    {interest}
-                  </Badge>
-                ))}
-              </div>
-            </div>
+            {/* Decorative background element */}
+            <div className="absolute -z-10 top-6 -left-6 bottom-6 right-6 bg-primary/5 rounded-3xl transform -rotate-3"></div>
           </div>
 
-          {/* Right Column - Highlights */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {highlights.map((highlight, index) => (
-              <Card 
-                key={index} 
-                className="bg-gradient-card border-border-light hover:shadow-hover transform hover:scale-105 transition-all duration-300 group"
+          {/* Right Column - Content */}
+          <div className="order-1 lg:order-2 space-y-6 text-left">
+            <div>
+              <p className="text-primary font-bold tracking-wider uppercase mb-2">About Me</p>
+              <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
+                Hi there, I'm <span className="text-primary">Imad Khattak</span>
+              </h2>
+              <p className="text-lg text-foreground-muted font-medium mb-6">
+                AI ENGINEER BASED IN PAKISTAN
+              </p>
+            </div>
+
+            <div className="space-y-4 text-foreground-muted leading-relaxed">
+              <p>
+                With over a year of experience in AI and ML, I specialize in building intelligent systems that solve real-world problems. 
+                From computer vision to NLP, I transform complex research into scalable solutions.
+              </p>
+              <p>
+                I am passionate about creating AI that truly understands and enhances human capabilities. 
+                When I'm not coding, I'm contributing to open-source or exploring the latest in AI.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-4 pt-4">
+              <a 
+                href="/cv.pdf" 
+                target="_blank" 
+                className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
               >
-                <CardContent className="p-6 text-center">
-                  <div className="mb-4 inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary/20 group-hover:bg-primary/30 transition-colors duration-300">
-                    <highlight.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <h4 className="text-lg font-semibold text-foreground mb-2">
-                    {highlight.title}
-                  </h4>
-                  <p className="text-sm text-foreground-muted">
-                    {highlight.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+                Download CV
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
+              </a>
+              <a 
+                href="#contact" 
+                className="inline-flex items-center justify-center px-8 py-3 rounded-full border border-primary text-primary font-medium hover:bg-primary/5 transition-colors"
+              >
+                Contact Me
+              </a>
+            </div>
           </div>
         </div>
 
