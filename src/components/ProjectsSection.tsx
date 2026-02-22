@@ -23,7 +23,7 @@ const ProjectsSection = () => {
       technologies: ["Python", "MySQL", "Faster-Whisper", "LangChain"],
       category: "AI & Voice Assistant",
       status: "Completed",
-      demoUrl: "#",
+      demoUrl: "https://youtu.be/bJwAE4ip3-w",
       githubUrl: "https://github.com/imadkhattak",
       featured: true
     },
